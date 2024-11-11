@@ -1,0 +1,356 @@
+.projects {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100;
+    background-color: rgb(37, 8, 8);
+    /* background: rgb(240, 18, 38); */
+    /* background: linear-gradient(317deg, rgba(240, 18, 38, 1) 29%, rgba(0, 0, 0, 1) 30%); */
+    z-index: 4;
+}
+
+.hrline {
+    border-bottom: 2px dotted rgb(236, 231, 231);
+}
+
+.highlight {
+    color: rgb(236, 72, 72);
+}
+
+.zipizza {
+    margin-top: 20px;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-bottom: 30px;
+    background-color: rgb(37, 8, 8);
+    padding: 10px;
+
+    animation: pentrys 4s linear;
+}
+
+@keyframes pentrys {
+    from {
+        opacity: 0;
+    }
+}
+
+.zititle {
+    color: rgb(248, 245, 245);
+    font-weight: bolder;
+    text-align: start;
+    font-family: Verdana;
+}
+
+.ziobject {
+    color: rgb(240, 233, 233);
+    font-weight: bolder;
+    text-wrap: wrap;
+    font-size: 18px;
+    margin-bottom: -30px;
+}
+
+.zipizzaimgs {
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 70px;
+    /* border: 1px solid red; */
+}
+
+.zid {
+    width: 500px;
+    filter: drop-shadow(0px 0px 15px rgb(12, 12, 12));
+}
+
+.zit {
+    height: 270px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 15px rgb(12, 12, 12));
+}
+
+.zim {
+    height: 270px;
+    border-radius: 40px;
+    filter: drop-shadow(0px 0px 15px rgb(12, 12, 12));
+}
+
+.crudtitle {
+    margin-top: 70px;
+    color: rgb(248, 245, 245);
+    font-weight: bolder;
+    text-align: start;
+    font-family: Verdana;
+}
+
+.crudobject {
+    color: rgb(248, 245, 245);
+    font-weight: bolder;
+    text-align: start;
+    font-family: Verdana;
+}
+
+.todotitle {
+    color: rgb(248, 245, 245);
+    font-weight: bolder;
+    text-align: start;
+    font-family: Verdana;
+}
+
+
+.todoobject {
+    color: rgb(248, 245, 245);
+    font-weight: bolder;
+    text-align: start;
+    font-family: Verdana;
+}
+
+
+@media all and (max-width: 767px) {
+    .zipizza {
+        margin-top: 2050px;
+        transform: scale(1.5);
+        /* height: 1190px; */
+    }
+
+    .zititle {
+        margin-bottom: 50px;
+    }
+
+    .ziobject {
+        margin-bottom: 130px;
+    }
+
+    .zipizzaimgs {
+        transform: scale(1);
+        flex-direction: column;
+        width: 300px;
+        height: 850px;
+    }
+
+    .zid {
+        width: 300px;
+    }
+
+    .zit {
+        /* width: 160px; */
+        height: 350px;
+        transform: scale(0.8);
+    }
+
+    .zim {
+        /* width: 140px; */
+        margin-top: -100px;
+        height: 500px;
+        transform: scale(0.6);
+    }
+
+    .crudobject {
+        margin-bottom: -160px;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .zipizza {
+        margin-top: 500px;
+        transform: scale(1.1);
+        /* height: 1190px; */
+    }
+
+    .zititle {
+        margin-bottom: 50px;
+    }
+
+    .ziobject {
+        margin-bottom: 130px;
+    }
+
+    .zipizzaimgs {
+        transform: scale(1);
+        flex-direction: column;
+        width: 300px;
+        height: 850px;
+    }
+
+    .zid {
+        width: 300px;
+    }
+
+    .zit {
+        /* width: 160px; */
+        height: 350px;
+        transform: scale(0.8);
+    }
+
+    .zim {
+        /* width: 140px; */
+        margin-top: -100px;
+        height: 500px;
+        transform: scale(0.6);
+    }
+
+    .crudobject {
+        margin-bottom: -160px;
+    }
+
+}
+
+@media all and (max-width: 380px) {
+    .zipizzaimgs {
+        flex-direction: column;
+        width: 280px;
+        height: 850px;
+    }
+
+    .zititle {
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    .ziobject {
+        margin-bottom: 20vh;
+    }
+
+    .zid {
+        width: 280px;
+    }
+
+    .zit {
+        /* width: 160px; */
+        height: 350px;
+        transform: scale(0.8);
+    }
+
+    .zim {
+        /* width: 140px; */
+        margin-top: -100px;
+        height: 500px;
+        transform: scale(0.6);
+    }
+
+    .crudtitle {
+        margin-top: 0px;
+    }
+
+    .todotitle {
+        margin-top: 50px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .zipizza {
+        transform: scale(0.7);
+        margin-top: -750px;
+    }
+
+    .zititle {
+        font-size: 45px;
+    }
+
+    .crudtitle,
+    .todotitle {
+        font-size: 45px;
+    }
+
+    .ziobject,
+    .todoobject {
+        font-size: 35px;
+    }
+
+    .crudobject {
+        font-size: 35px;
+    }
+}
+
+@media all and (min-width:1236px) {
+    .zipizza {
+        margin-top: 100px;
+        margin-left: 50%;
+        margin-right: 50%;
+        margin-bottom: 30px;
+        width: 1500px;
+        background-color: rgb(37, 8, 8);
+        padding: 10px;
+        transform: scale(1);
+        animation: pentrys 4s linear;
+    }
+
+    @keyframes pentrys {
+        from {
+            opacity: 0;
+        }
+    }
+
+    .zititle {
+        color: rgb(248, 245, 245);
+        font-weight: bolder;
+        text-align: start;
+        font-family: Verdana;
+        font-size: 45px;
+    }
+
+    .ziobject {
+        color: rgb(240, 233, 233);
+        font-weight: bolder;
+        text-wrap: wrap;
+        font-size: 35px;
+        margin-bottom: -30px;
+    }
+
+    .zipizzaimgs {
+        display: flex;
+        width: 1000px;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 70px;
+        /* border: 1px solid red; */
+    }
+
+    .zid {
+        width: 500px;
+        filter: drop-shadow(0px 0px 15px rgb(12, 12, 12));
+    }
+
+    .zit {
+        height: 270px;
+        border-radius: 20px;
+        filter: drop-shadow(0px 0px 15px rgb(12, 12, 12));
+    }
+
+    .zim {
+        height: 270px;
+        border-radius: 40px;
+        filter: drop-shadow(0px 0px 15px rgb(12, 12, 12));
+    }
+
+    .crudtitle {
+        margin-top: 70px;
+        color: rgb(248, 245, 245);
+        font-weight: bolder;
+        text-align: start;
+        font-family: Verdana;
+    }
+
+    .crudobject {
+        color: rgb(248, 245, 245);
+        font-weight: bolder;
+        text-align: start;
+        font-family: Verdana;
+    }
+
+    .todotitle {
+        color: rgb(248, 245, 245);
+        font-weight: bolder;
+        text-align: start;
+        font-family: Verdana;
+    }
+
+
+    .todoobject {
+        color: rgb(248, 245, 245);
+        font-weight: bolder;
+        text-align: start;
+        font-family: Verdana;
+    }
+
+}

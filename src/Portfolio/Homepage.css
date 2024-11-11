@@ -1,0 +1,1116 @@
+body {
+    background-color: black;
+}
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    /* background: rgb(240, 18, 38);
+    background: linear-gradient(317deg, rgba(240, 18, 38, 1) 29%, rgba(0, 0, 0, 1) 30%); */
+    background: rgb(240, 18, 38);
+    background: linear-gradient(317deg, rgba(240, 18, 38, 1) 29%, rgba(0, 0, 0, 1) 30%);
+    overflow: hidden;
+    animation: opac 3s ease-in-out;
+}
+
+@keyframes opac4 {
+    from {
+        margin-left: 900px;
+        opacity: 0;
+    }
+}
+
+.highlights {
+    color: rgb(252, 48, 48);
+}
+
+nav {
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 70px;
+    background-color: transparent;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+
+#h1s {
+    /* color: red; */
+    width: 20%;
+    margin-top: 8px;
+    margin-left: 5px;
+    font-size: 40px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 15px red;
+    text-decoration: none;
+    /* margin-left: 20px; */
+    animation: portfoliologo 1s;
+    animation-timing-function: linear;
+    z-index: -1;
+}
+
+@keyframes portfoliologo {
+    from {
+        margin-top: -100px;
+    }
+}
+
+ul {
+    display: flex;
+    /* justify-content: center; */
+    gap: 30px;
+    width: 50%;
+    height: 100%;
+
+}
+
+li {
+    width: fit-content;
+    font-size: 20px;
+    list-style: none;
+    border: 1px solid red;
+    border-radius: 20px 20px;
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-top: 5px;
+    height: 2px;
+    text-shadow: 0px 0px 7px red;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    animation: navlis 1s linear;
+}
+
+li:hover {
+    transform: scale(1.1);
+    border: none;
+}
+
+.contactus {
+    margin-top: 0.5%;
+    border-color: whitesmoke;
+    text-shadow: none;
+}
+
+
+@keyframes navlis {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.menu {
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    /* z-index: -1; */
+}
+
+.line {
+    width: 33px;
+    height: 2px;
+    background-color: red;
+    margin-top: 2px;
+    margin-bottom: 6px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 120px;
+    margin-left: 90px;
+    margin-right: 20px;
+}
+
+.leftcontainer {
+    min-width: 100%;
+    /* border: 1px solid red; */
+}
+
+.name {
+    color: red;
+    font-size: 60px;
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: opac 2s ease-in-out;
+}
+
+@keyframes opac {
+    from {
+        opacity: 0;
+    }
+}
+
+.title {
+    margin-top: 5px;
+    margin-bottom: 2px;
+    color: red;
+    font-size: 30px;
+    border-right: 1px solid red;
+    width: 39ch;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 15px;
+    text-align: start;
+    animation: typing 5s steps(19) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
+}
+
+@keyframes opac2 {
+    from {
+        opacity: 0;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.object {
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    line-height: 30px;
+    animation: opac3 2s ease-in-out;
+}
+
+@keyframes opac3 {
+    from {
+        opacity: 0;
+    }
+}
+
+.rightcontainer {
+    margin-left: 30px;
+    width: 45vw;
+    height: 52vh;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+.img {
+    position: fixed;
+    bottom: 0;
+    align-self: center;
+    width: fit-content;
+    height: 90vh;
+    object-fit: cover;
+    filter: opacity(0.7) contrast(1.4) saturate(0.7) drop-shadow(0px 0px 50px rgb(92, 3, 3));
+    /* border: 1px solid red; */
+    transform-style: preserve-3d;
+    animation: imgentry 2s linear;
+}
+
+@keyframes imgentry {
+    from {
+        transform: rotate(5deg);
+        opacity: 0;
+        margin-right: -600px;
+    }
+}
+
+.down {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.downloadbtn {
+    padding: 5px 20px 10px 20px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    /* border: 1px solid red; */
+    border-radius: 20px;
+    color: whitesmoke;
+    box-shadow: 0px 0px 10px white;
+    text-shadow: 0px 0px 2px whitesmoke;
+    z-index: 1;
+    transition: transform 0.1s ease-in-out;
+    animation: downloadbtn 3s;
+    animation-timing-function: initial;
+}
+
+.downloadbtn:hover {
+    transform: scale(1.1);
+}
+
+@keyframes downloadbtn {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+}
+
+@media (min-width: 1100px) and (max-width: 1115px) {
+    .leftcontainer {
+        margin-top: -150px;
+        transform: scale(0.9);
+    }
+}
+
+@media (min-width: 931px) and (max-width: 999px) {
+
+    #notshow {
+        display: none;
+    }
+
+    #show {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        margin-top: 54px;
+        background-color: black;
+        z-index: 7;
+    }
+
+    .leftcontainer {
+        z-index: 2;
+    }
+
+    li {
+        text-align: center;
+        margin-top: 20px;
+        margin-right: 100px;
+        margin-left: 30px;
+    }
+
+    li {
+        transform: scale(1.4);
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 30px;
+    }
+
+    .line {
+        width: 50px;
+        height: 6px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 930px) {
+    .menu {
+        width: fit-content;
+        height: fit-content;
+        align-self: center;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: block;
+        /* z-index: -1; */
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    .line {
+        width: 40px;
+        height: 3px;
+        margin-top: 0;
+    }
+
+    .rightcontainer {
+        position: fixed;
+        right: 0;
+        z-index: 1;
+    }
+
+    .leftcontainer {
+        position: fixed;
+        top: 100px;
+        left: 25px;
+        z-index: 2;
+    }
+
+    .name {
+        font-size: 36px;
+        text-wrap: wrap;
+    }
+
+    .title {
+        margin-top: 30px;
+        font-size: 20px;
+        letter-spacing: 0;
+        width: 20ch;
+        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
+    }
+
+    @keyframes opac2 {
+        from {
+            opacity: 0;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .object {
+        padding-bottom: 5px;
+        margin-top: 40px;
+        font-size: 22px;
+        line-height: 35px;
+        width: 400px;
+        font-weight: 500;
+        /* background-color: black; */
+        border-radius: 20px;
+    }
+
+    .downloadbtn {
+        position: fixed;
+        bottom: 90px;
+        background-color: black;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 0px 0px 10px white;
+    }
+
+    #notshow {
+        display: none;
+    }
+
+    #show {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        top: 50px;
+        background-color: black;
+        z-index: 7;
+    }
+
+    li {
+        margin-top: 20PX;
+    }
+
+    li {
+        transform: scale(1.4);
+    }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 760px) {
+    .menu {
+        width: fit-content;
+        height: fit-content;
+        align-self: center;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: block;
+        /* z-index: -1; */
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    .line {
+        width: 40px;
+        height: 3px;
+        margin-top: 0;
+    }
+
+    .rightcontainer {
+        display: none;
+    }
+
+    .leftcontainer {
+        position: fixed;
+        top: 100px;
+        left: 15px;
+    }
+
+    .name {
+        font-size: 36px;
+        text-wrap: wrap;
+    }
+
+    .title {
+        margin-top: 30px;
+        font-size: 20px;
+        letter-spacing: 0;
+        width: 20ch;
+        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
+    }
+
+    @keyframes opac2 {
+        from {
+            opacity: 0;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .object {
+        padding-bottom: 5px;
+        margin-top: 40px;
+        font-size: 22px;
+        line-height: 25px;
+        width: 600px;
+        font-weight: 500;
+        /* background-color: black; */
+        border-radius: 20px;
+    }
+
+    .downloadbtn {
+        position: fixed;
+        bottom: 90px;
+        background-color: black;
+        border-radius: 50px;
+        border: none;
+        box-shadow: none;
+    }
+
+    #notshow {
+        display: none;
+    }
+
+    #show {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        top: 35px;
+        background-color: black;
+        z-index: 2;
+    }
+
+    li {
+        margin-top: 20PX;
+    }
+
+    li {
+        transform: scale(1.4);
+    }
+
+
+}
+
+@media (min-width: 491px) and (max-width: 575px) {
+    .menu {
+        width: fit-content;
+        height: fit-content;
+        align-self: center;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: block;
+        /* z-index: -1; */
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    .line {
+        width: 40px;
+        height: 3px;
+        margin-top: 0;
+    }
+
+    .rightcontainer {
+        display: none;
+    }
+
+    .leftcontainer {
+        position: fixed;
+        top: 100px;
+        left: 15px;
+    }
+
+    .name {
+        font-size: 36px;
+        text-wrap: wrap;
+    }
+
+    .title {
+        margin-top: 10px;
+        font-size: 20px;
+        letter-spacing: 0;
+        width: 20ch;
+        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
+    }
+
+    @keyframes opac2 {
+        from {
+            opacity: 0;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .object {
+        padding-bottom: 5px;
+        margin-top: 40px;
+        font-size: 22px;
+        line-height: 25px;
+        width: 430px;
+        font-weight: 500;
+        /* background-color: black; */
+        border-radius: 20px;
+    }
+
+    .downloadbtn {
+        position: fixed;
+        bottom: 90px;
+        background-color: black;
+        border-radius: 50px;
+        border: none;
+        box-shadow: none;
+    }
+
+    #notshow {
+        display: none;
+    }
+
+    #show {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        top: 22px;
+        background-color: black;
+        z-index: 2;
+    }
+
+    li {
+        margin-top: 20PX;
+    }
+
+    li {
+        transform: scale(1.4);
+    }
+
+
+}
+
+/* @media all and (max-width: 999px) {
+    #show {
+        margin-top: 5px;
+    }
+} */
+
+
+@media (min-width: 441px) and (max-width: 490px) {
+    .menu {
+        width: fit-content;
+        height: fit-content;
+        align-self: center;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: block;
+        /* z-index: -1; */
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    .line {
+        width: 40px;
+        height: 3px;
+        margin-top: 0;
+    }
+
+    .rightcontainer {
+        display: none;
+    }
+
+    .leftcontainer {
+        position: fixed;
+        top: 100px;
+        left: 15px;
+    }
+
+    .name {
+        font-size: 38px;
+        text-wrap: wrap;
+    }
+
+    .title {
+        margin-top: 10px;
+        font-size: 20px;
+        letter-spacing: 0;
+        width: 20ch;
+        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
+    }
+
+    @keyframes opac2 {
+        from {
+            opacity: 0;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .object {
+        padding-bottom: 5px;
+        margin-top: 40px;
+        font-size: 22px;
+        line-height: 25px;
+        width: 400px;
+        font-weight: 500;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    .downloadbtn {
+        position: fixed;
+        bottom: 90px;
+        background-color: black;
+        border-radius: 50px;
+        border: none;
+        box-shadow: none;
+    }
+
+    #notshow {
+        display: none;
+    }
+
+    #show {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        right: 0;
+        top: -10px;
+        background-color: black;
+        z-index: 2;
+    }
+
+    li {
+        margin-top: 20PX;
+    }
+
+}
+
+@media (min-width: 381px) and (max-width: 440px) {
+
+    /* #show {
+        margin-top: 6.5vh;
+    } */
+
+    .menu {
+        width: fit-content;
+        height: fit-content;
+        align-self: center;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: block;
+        /* z-index: -1; */
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    .line {
+        width: 40px;
+        height: 3px;
+        margin-top: 0;
+    }
+
+    .rightcontainer {
+        display: none;
+    }
+
+    .leftcontainer {
+        position: fixed;
+        top: 100px;
+        left: 15px;
+    }
+
+    .name {
+        font-size: 25px;
+        text-wrap: wrap;
+    }
+
+    .title {
+        margin-top: 10px;
+        font-size: 20px;
+        letter-spacing: 0;
+        width: 20ch;
+        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
+    }
+
+    @keyframes opac2 {
+        from {
+            opacity: 0;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .object {
+        margin-top: 40px;
+        font-size: 17px;
+        line-height: 20px;
+        width: 340px;
+        font-weight: 500;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    .downloadbtn {
+        position: fixed;
+        bottom: 70px;
+        background-color: black;
+        border-radius: 50px;
+        border: none;
+        box-shadow: none;
+    }
+
+    #notshow {
+        display: none;
+    }
+
+    #show {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        top: -10px;
+        background-color: black;
+        z-index: 2;
+    }
+
+    li {
+        margin-top: 20PX;
+    }
+}
+
+@media (min-width: 331px) and (max-width: 380px) {
+    nav {
+        height: 60px;
+    }
+
+    /* .body {
+        background: black;
+    } */
+
+    /* #show {
+        margin-top: 90px;
+    } */
+
+    .menu {
+        width: fit-content;
+        height: fit-content;
+        align-self: center;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: block;
+        /* z-index: -1; */
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    .line {
+        width: 40px;
+        height: 3px;
+        margin-top: 0;
+    }
+
+    .rightcontainer {
+        display: none;
+    }
+
+    .leftcontainer {
+        position: fixed;
+        top: 60px;
+        left: 15px;
+    }
+
+    .name {
+        font-size: 23px;
+        text-wrap: wrap;
+    }
+
+    .title {
+        margin-top: 10px;
+        font-size: 20px;
+        letter-spacing: 0;
+        width: 20ch;
+        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
+    }
+
+    @keyframes opac2 {
+        from {
+            opacity: 0;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .object {
+        margin-top: 50px;
+        font-size: 17px;
+        line-height: 20px;
+        width: 340px;
+        font-weight: 500;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    .downloadbtn {
+        position: fixed;
+        bottom: 70px;
+        background-color: black;
+        border-radius: 50px;
+        border: none;
+        box-shadow: none;
+    }
+
+
+    #notshow {
+        display: none;
+    }
+
+    #show {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        top: -12px;
+        background-color: black;
+        z-index: 2;
+    }
+
+    li {
+        margin-top: 20PX;
+    }
+}
+
+@media all and (max-width: 330px) {
+    .body {
+        background: black;
+    }
+
+    #h1s {
+        font-size: 30px;
+    }
+
+    .menu {
+        width: fit-content;
+        height: fit-content;
+        align-self: center;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: block;
+        /* z-index: -1; */
+        position: fixed;
+        right: 10px;
+        top: 10px;
+    }
+
+    .line {
+        width: 40px;
+        height: 3px;
+        margin-top: 0;
+    }
+
+    .rightcontainer {
+        display: none;
+    }
+
+    .leftcontainer {
+        position: fixed;
+        top: 28px;
+        left: 10px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
+    .title {
+        font-size: 20px;
+        letter-spacing: 0;
+        width: 20ch;
+        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
+    }
+
+    @keyframes opac2 {
+        from {
+            opacity: 0;
+        }
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+    }
+
+    @keyframes cursor {
+        50% {
+            border-color: transparent;
+        }
+    }
+
+    .object {
+        font-size: 12px;
+        line-height: 20px;
+        width: 300px;
+        font-weight: 700;
+        background-color: black;
+        border-radius: 20px;
+    }
+
+    .downloadbtn {
+        position: fixed;
+        bottom: 25px;
+        border: none;
+        box-shadow: none;
+    }
+
+    li {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    #notshow {
+        display: none;
+    }
+
+    #show {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        right: 0;
+        margin-top: 54px;
+        background-color: black;
+        z-index: 2;
+    }
+}

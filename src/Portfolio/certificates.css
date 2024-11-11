@@ -1,0 +1,128 @@
+.certificates {
+    background: rgb(240, 18, 38);
+    background: linear-gradient(317deg, rgba(240, 18, 38, 1) 29%, rgb(0, 0, 0) 30%);
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+    overflow: hidden;
+}
+
+.htmlc,
+.cssc,
+.reactc {
+    width: 400px;
+    height: 300px;
+    margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    animation: certificates 2s linear;
+}
+
+@keyframes certificates {
+    from {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1300px) {
+    .certificates {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .htmlc,
+    .cssc,
+    .reactc {
+        width: 350px;
+        height: 200px;
+        margin-top: 10px;
+        margin-bottom: 0;
+
+    }
+
+    .htmlc,
+    .cssc {
+        margin-top: 140px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+
+    .htmlc,
+    .cssc,
+    .reactc {
+        width: 350px;
+        height: 200px;
+        margin-top: 0px;
+        margin-bottom: 0;
+
+    }
+
+    .htmlc {
+        margin-top: 140px;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 760px) {
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+
+    .htmlc,
+    .cssc,
+    .reactc {
+        width: 300px;
+        height: 200px;
+        margin-top: 5px;
+        margin-bottom: 0;
+
+    }
+
+    .htmlc {
+        margin-top: 90px;
+    }
+}
+
+@media (min-width: 331px) and (max-width: 460px) {
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+
+    .htmlc,
+    .cssc,
+    .reactc {
+        width: 250px;
+        height: 150px;
+        margin-top: 0;
+        margin-bottom: 0;
+
+    }
+
+    .htmlc {
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 330px) {
+    .certificates {
+        grid-template-columns: 1fr;
+    }
+
+    .htmlc,
+    .cssc,
+    .reactc {
+        width: 200px;
+        height: 100px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .htmlc {
+        margin-top: 70px;
+    }
+}

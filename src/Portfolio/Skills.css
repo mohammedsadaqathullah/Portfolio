@@ -1,0 +1,600 @@
+.skills {
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+    /* background-color: #0c0c0c; */
+    background: rgb(240, 18, 38);
+    background: linear-gradient(317deg, rgba(240, 18, 38, 1) 29%, rgba(0, 0, 0, 1) 30%);
+}
+
+.skillsonetop,
+.skillstwotop,
+.skillsthreetop {
+    box-shadow: rgba(8, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: #111111;
+    /* backdrop-filter: blur(100px); */
+    width: 400px;
+    height: 250px;
+    border-radius: 20px 20px;
+    filter: brightness(1) contrast(1.3);
+    margin-left: 50%;
+    transform: translate(-50%, -45%);
+    margin-top: 45%;
+    transform-style: preserve-3d;
+    animation: entryskills 2s linear;
+    /* animation-delay: 1s; */
+}
+
+@keyframes entryskills {
+    from {
+        margin-top: -400px;
+        transform: rotatey(10deg);
+        width: 50px;
+        filter: blur(25px);
+    }
+}
+
+.languages,
+.frameworks,
+.others {
+    color: rgb(247, 244, 244);
+    font-family: arial;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 35px;
+    /* text-shadow: 0px 0px 10px rgb(243, 57, 57), 0px 0px 10px rgb(243, 57, 57), 0px 0px 10px rgb(243, 57, 57), 0px 0px 10px rgb(243, 57, 57), 0px 0px 10px rgb(243, 57, 57), 0px 0px 10px rgb(243, 57, 57), 0px 0px 10px rgb(243, 57, 57); */
+    text-align: center;
+    background-color: rgb(39, 38, 37);
+    margin-top: 0;
+    padding-bottom: 5px;
+}
+
+/* 
+.skillsone,
+.skillstwo,
+.skillsthree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    gap: 5%;
+} */
+
+table {
+    margin-left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+td {
+    padding-left: 20px;
+}
+
+.html {
+    width: 50px;
+    height: 60px;
+
+    animation: html 2s ease-in-out infinite;
+}
+
+@keyframes html {
+    50% {
+        filter: drop-shadow(0px 0px 15px rgb(248, 102, 35));
+    }
+}
+
+.css {
+    width: 80px;
+    height: 80px;
+
+    animation: css 2s ease-in-out infinite;
+}
+
+@keyframes css {
+    50% {
+        filter: drop-shadow(0px 0px 10px rgb(38, 101, 236));
+    }
+}
+
+
+.js {
+    width: 80px;
+    height: 110px;
+    animation: js 2s ease-in-out infinite;
+}
+
+@keyframes js {
+    50% {
+        filter: drop-shadow(0px 0px 8px rgb(248, 245, 35));
+    }
+}
+
+.bootstrap {
+    width: 90px;
+    height: 100px;
+    animation: bootstrap 2s ease-in-out infinite;
+}
+
+@keyframes bootstrap {
+    50% {
+        filter: drop-shadow(0px 0px 15px rgb(131, 43, 247));
+        transform: skew(10deg);
+    }
+}
+
+.material {
+    width: 100px;
+
+    animation: material 2s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+@keyframes material {
+    50% {
+        filter: drop-shadow(0px 0px 6px rgb(62, 242, 248));
+        /* transform: rotate(-300deg); */
+    }
+}
+
+.react {
+    width: 80px;
+    height: 80px;
+
+    animation: react 30s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+@keyframes react {
+    20% {
+        filter: drop-shadow(0px 0px 15px rgb(46, 219, 241));
+        transform: rotate(100deg);
+    }
+
+    40% {
+        filter: drop-shadow(0px 0px 15px rgb(46, 219, 241));
+        transform: rotate(300deg);
+    }
+
+    60% {
+        filter: drop-shadow(0px 0px 15px rgb(46, 219, 241));
+        transform: rotate(500deg);
+    }
+
+    80% {
+        filter: drop-shadow(0px 0px 15px rgb(46, 219, 241));
+        transform: rotate(700deg);
+    }
+}
+
+.git {
+    width: 80px;
+    height: 70px;
+    animation: git 2s infinite ease-in-out;
+}
+
+@keyframes git {
+    50% {
+        filter: drop-shadow(0px 0px 10px rgb(247, 78, 27));
+        transform: skew(10deg);
+    }
+}
+
+.github {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+    animation: github 5s infinite ease-in-out;
+    animation-delay: 1s;
+}
+
+@keyframes github {
+    50% {
+        filter: drop-shadow(0px 0px 10px rgb(226, 219, 216));
+        transform: rotatey(180deg);
+    }
+}
+
+.vs {
+    width: 80px;
+    height: 70px;
+    animation: vs 2s infinite ease-in-out;
+}
+
+@keyframes vs {
+    50% {
+        filter: drop-shadow(0px 0px 10px rgb(48, 169, 240));
+        transform: rotate(-20deg);
+    }
+}
+
+.skilltitles {
+    color: whitesmoke;
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+
+
+@media all and (max-width: 330px) {
+    .skills {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        background-color: #1f1d1d;
+    }
+
+    .skillsonetop {
+        margin-top: 30%;
+        transform: translate(-50%, -8%);
+        width: 300px;
+        height: 50px;
+        margin-bottom: 5px;
+        background-color: rgb(8, 2, 0);
+    }
+
+    .skillstwotop {
+        margin-bottom: 20px;
+        margin-top: 50%;
+        transform: translate(-50%);
+        width: 300px;
+        height: 50px;
+    }
+
+    .skillsthreetop {
+        margin-top: 50%;
+        transform: translate(-50%, -2%);
+        width: 300px;
+        height: 50px;
+    }
+
+    /* .skillsone,
+    .skillstwo,
+    .skillsthree {
+        margin-top: -23px;
+        gap: 10%;
+    } */
+
+    #skill-logo {
+        margin-top: -13px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .skilltitles {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .languages,
+    .frameworks,
+    .others {
+        font-size: 10px;
+    }
+
+    .html {
+        width: 30px;
+        height: 40px;
+
+    }
+
+    .css {
+        width: 40px;
+        height: 60px;
+    }
+
+    .js {
+        width: 50px;
+        height: 80px;
+    }
+
+    .bootstrap {
+        width: 50px;
+        height: 60px;
+    }
+
+    .material {
+        width: 50px;
+        height: 60px;
+    }
+
+    .react {
+        width: 40px;
+        height: 40px;
+    }
+
+    .git {
+        /* margin-top: -30px; */
+        width: 40px;
+        height: 40px;
+    }
+
+    .github {
+        margin-top: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .vs {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    .skillsonetop,
+    .skillstwotop,
+    .skillsthreetop {
+        margin-top: 50%;
+        transform: translate(-50%);
+    }
+
+    #show {
+        margin-top: 6.5vh;
+    }
+
+    table {
+        margin-top: -25px;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+
+    #skill-logo {
+        position: relative;
+        top: 20px;
+    }
+
+    .skilltitles {
+        position: relative;
+        top: 25px;
+        text-wrap: nowrap;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .skills {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        background-color: #474242;
+    }
+
+    .skillsonetop {
+        width: 300px;
+        height: 160px;
+        margin-top: 25%;
+    }
+
+    .skillstwotop,
+    .skillsthreetop {
+        width: 300px;
+        height: 160px;
+        margin-top: -30%;
+    }
+
+    .skilltitles {
+        text-wrap: nowrap;
+    }
+
+    /* .skillsone,
+    .skillstwo,
+    .skillsthree {
+        margin-top: -10px;
+        gap: 10%;
+        transform: scale(1.2)
+    } */
+
+    .languages,
+    .frameworks,
+    .others {
+        font-size: 20px;
+    }
+
+    .html {
+        width: 30px;
+        height: 40px;
+
+    }
+
+    .css {
+        width: 40px;
+        height: 60px;
+    }
+
+    .js {
+        width: 50px;
+        height: 80px;
+    }
+
+    .bootstrap {
+        width: 50px;
+        height: 60px;
+    }
+
+    .material {
+        width: 50px;
+        height: 60px;
+    }
+
+    .react {
+        width: 40px;
+        height: 40px;
+    }
+
+    .git {
+        /* margin-top: -30px; */
+        width: 40px;
+        height: 40px;
+    }
+
+    .github {
+        margin-top: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .vs {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media all and (max-width:600px) {
+    .skills {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        overflow: hidden;
+        background-color: #1b1b1b;
+    }
+
+    .skillsonetop {
+        margin-top: 30%;
+        transform: translate(-50%, -40%);
+        width: 300px;
+        height: 110px;
+        margin-bottom: 5px;
+        background-color: rgb(8, 2, 0);
+    }
+
+    #show {
+        margin-top: 9.5vh;
+    }
+
+    .skillstwotop {
+        margin-bottom: 20px;
+        margin-top: 50%;
+        transform: translate(-50%, -40%);
+        width: 300px;
+        height: 120px;
+    }
+
+    .skillsthreetop {
+        margin-top: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 120px;
+    }
+
+    /* .skillsone,
+    .skillstwo,
+    .skillsthree {
+        margin-top: -23px;
+        gap: 10%;
+    } */
+
+    #skill-logo {
+        margin-top: 5px;
+        width: 30px;
+        height: 30px;
+        transform: scale(1.5);
+    }
+
+    .skilltitles {
+        margin-top: 3px;
+        font-size: 10px;
+        text-wrap: nowrap;
+    }
+
+    .languages,
+    .frameworks,
+    .others {
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+    .html {
+        width: 30px;
+        height: 40px;
+
+    }
+
+    .css {
+        width: 40px;
+        height: 60px;
+    }
+
+    .js {
+        width: 50px;
+        height: 80px;
+    }
+
+    .bootstrap {
+        width: 50px;
+        height: 60px;
+    }
+
+    .material {
+        width: 50px;
+        height: 60px;
+    }
+
+    .react {
+        width: 40px;
+        height: 40px;
+    }
+
+    .git {
+        /* margin-top: -30px; */
+        width: 40px;
+        height: 40px;
+    }
+
+    .github {
+        margin-top: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .vs {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media all and (max-width:768px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .skillsonetop {
+        margin-top: 20vh;
+    }
+
+    .skillstwotop {
+        margin-top: 5vh;
+    }
+
+    .skillsthreetop {
+        margin-top: 5vh;
+    }
+
+}
+
+@media all and (max-width: 1024px) {
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .skillsonetop {
+        margin-top: 15vh;
+    }
+
+    .skillstwotop {
+        margin-top: 2vh;
+    }
+
+    .skillsthreetop {
+        margin-top: 2vh;
+    }
+
+}
+
+/* @media all and (max-width: 1200px) {} */
