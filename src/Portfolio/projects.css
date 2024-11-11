@@ -148,6 +148,10 @@
     .crudobject {
         margin-bottom: -160px;
     }
+
+    .ziobject {
+        margin-bottom: -100px;
+    }
 }
 
 @media all and (max-width: 460px) {
@@ -170,6 +174,7 @@
         flex-direction: column;
         width: 300px;
         height: 850px;
+        margin-top: 300px;
     }
 
     .zid {
@@ -193,6 +198,14 @@
         margin-bottom: -160px;
     }
 
+    .ziobject {
+        margin-bottom: -100px;
+    }
+
+    .crudobject {
+        margin-bottom: -200px;
+    }
+
 }
 
 @media all and (max-width: 380px) {
@@ -200,6 +213,7 @@
         flex-direction: column;
         width: 280px;
         height: 850px;
+        margin-top: 300px;
     }
 
     .zititle {
@@ -208,7 +222,7 @@
     }
 
     .ziobject {
-        margin-bottom: 20vh;
+        margin-bottom: 10vh;
     }
 
     .zid {
@@ -234,6 +248,14 @@
 
     .todotitle {
         margin-top: 50px;
+    }
+
+    .ziobject {
+        margin-bottom: -100px;
+    }
+
+    .crudobject {
+        margin-bottom: -200px;
     }
 }
 
