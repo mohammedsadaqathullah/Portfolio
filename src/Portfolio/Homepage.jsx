@@ -17,7 +17,7 @@ function Homepage() {
                 </div>
             </div>
             <div className="down">
-                <button className='downloadbtn'>Download Resume &darr;</button></div>
+                <a href="/portfoliopdf.pdf" download="My_Portfolio.pdf"><button className='downloadbtn'>Download Resume &darr;</button></a> </div>
 
         </div>
 
