@@ -85,10 +85,20 @@
     }
 
     .zit {
-        width: 250px;
+        width: 240px;
     }
 
     .zim {
-        width: 220px;
+        width: 170px;
+    }
+}
+
+@media all and (max-width: 575px) {
+    zit {
+        width: 200px;
+    }
+
+    .zim {
+        width: 150px;
     }
 }
