@@ -1,9 +1,13 @@
 .certificates {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .htmlc,
@@ -11,10 +15,9 @@
 .reactc {
     width: 400px;
     height: 300px;
-    margin-top: 50%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px black;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* box-shadow: 0px 0px 10px black; */
     animation: certificates 2s linear;
 }
 
@@ -35,7 +38,7 @@
         width: 350px;
         height: 200px;
         margin-top: 10px;
-        margin-bottom: 0;
+        margin-bottom: 50px;
 
     }
 
@@ -45,6 +48,7 @@
     }
 }
 
+/* 
 @media (min-width: 761px) and (max-width: 900px) {
     .certificates {
         grid-template-columns: 1fr;
@@ -56,16 +60,13 @@
         width: 350px;
         height: 200px;
         margin-top: 0px;
-        margin-bottom: 0;
+        margin-bottom: 50px;
 
     }
 
-    .htmlc {
-        margin-top: 140px;
-    }
-}
+} */
 
-@media (min-width: 461px) and (max-width: 760px) {
+@media (min-width: 461px) and (max-width: 900px) {
     .certificates {
         grid-template-columns: 1fr;
     }
@@ -75,19 +76,20 @@
     .reactc {
         width: 300px;
         height: 200px;
-        margin-top: 5px;
-        margin-bottom: 0;
+        padding-top: 5px;
+        margin-bottom: 50px;
 
     }
 
     .htmlc {
-        margin-top: 90px;
+        padding-top: 90px;
     }
 }
 
 @media (min-width: 331px) and (max-width: 460px) {
     .certificates {
         grid-template-columns: 1fr;
+        top: 60%;
     }
 
     .htmlc,
@@ -96,18 +98,19 @@
         width: 250px;
         height: 150px;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 50px;
 
     }
 
     .htmlc {
-        margin-top: 90px;
+        padding-top: 90px;
     }
 }
 
 @media (max-width: 330px) {
     .certificates {
         grid-template-columns: 1fr;
+        top: 70%;
     }
 
     .htmlc,
@@ -115,11 +118,7 @@
     .reactc {
         width: 200px;
         height: 100px;
-        margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 50px;
     }
 
-    .htmlc {
-        margin-top: 70px;
-    }
 }
