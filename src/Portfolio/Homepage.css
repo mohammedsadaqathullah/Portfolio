@@ -1,16 +1,14 @@
 body {
-    background-color: black;
+    background-color: rgb(250, 249, 249);
 }
 
-.body {
+/* .body {
     width: 100vw;
     height: 100vh;
     /* background: rgb(240, 18, 38);
     background: linear-gradient(317deg, rgba(240, 18, 38, 1) 29%, rgba(0, 0, 0, 1) 30%); */
-    background: rgb(240, 18, 38);
-    background: linear-gradient(317deg, rgba(240, 18, 38, 1) 29%, rgba(0, 0, 0, 1) 30%);
-    overflow: hidden;
-    animation: opac 3s ease-in-out;
+/* overflow: hidden;
+animation: opac 3s ease-in-out;
 }
 
 @keyframes opac4 {
@@ -18,10 +16,11 @@ body {
         margin-left: 900px;
         opacity: 0;
     }
-}
+} */
 
 .highlights {
-    color: rgb(252, 48, 48);
+    color: rgb(250, 3, 3);
+    text-shadow: 0px 0px 1px red;
 }
 
 nav {
@@ -31,24 +30,34 @@ nav {
     justify-content: space-around;
     width: 100%;
     height: 70px;
-    background-color: transparent;
+    background-color: rgb(5, 5, 5);
     flex-wrap: wrap;
     /* border: 1px solid red; */
+    position: fixed;
+    top: 0;
+    z-index: 5;
 }
 
 #h1s {
     /* color: red; */
-    width: 20%;
-    margin-top: 8px;
-    margin-left: 5px;
-    font-size: 40px;
-    color: whitesmoke;
-    text-shadow: 2px 2px 15px red;
+    width: auto;
+    text-align: center;
+    font-size: 35px;
+    color: rgb(248, 247, 247);
+    /* text-shadow: 2px 2px 15px red; */
     text-decoration: none;
     /* margin-left: 20px; */
+    position: fixed;
+    margin: 0;
+    left: 20px;
+    top: 15px;
+    background-color: rgb(243, 54, 54);
+    border-radius: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: none;
     animation: portfoliologo 1s;
     animation-timing-function: linear;
-    z-index: -1;
 }
 
 @keyframes portfoliologo {
@@ -60,26 +69,26 @@ nav {
 ul {
     display: flex;
     /* justify-content: center; */
-    gap: 30px;
+    gap: 50px;
     width: 50%;
-    height: 100%;
-
+    justify-content: center;
 }
 
 li {
     width: fit-content;
     font-size: 20px;
     list-style: none;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     border-radius: 20px 20px;
     color: whitesmoke;
-    padding-left: 20px;
-    padding-right: 20px;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
     padding-bottom: 30px;
     padding-top: 5px;
     height: 2px;
-    text-shadow: 0px 0px 7px red;
-    transition: transform 0.1s ease-in-out;
+    font-weight: bold;
+    /* text-shadow: 0px 0px 7px red; */
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
     transform-style: preserve-3d;
     animation: navlis 1s linear;
@@ -87,7 +96,10 @@ li {
 
 li:hover {
     transform: scale(1.1);
-    border: none;
+    background-color: red;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: none;
 }
 
 .contactus {
@@ -110,10 +122,11 @@ li:hover {
 }
 
 .menu {
+    position: fixed;
+    right: 10px;
+    top: 20px;
     width: fit-content;
     height: fit-content;
-    align-self: center;
-    margin-bottom: 30px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -122,31 +135,34 @@ li:hover {
 }
 
 .line {
-    width: 33px;
-    height: 2px;
+    width: 45px;
+    height: 5px;
     background-color: red;
-    margin-top: 2px;
-    margin-bottom: 6px;
+    padding-top: 2px;
+    margin-bottom: 5px;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-top: 120px;
-    margin-left: 90px;
-    margin-right: 20px;
+    padding-top: 120px;
+    padding-left: 90px;
+    padding-right: 20px;
 }
 
 .leftcontainer {
     min-width: 100%;
     /* border: 1px solid red; */
+    order: 1;
+    margin-top: 60px;
 }
 
 .name {
     color: red;
     font-size: 60px;
-    margin-bottom: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
     animation: opac 2s ease-in-out;
 }
 
@@ -157,15 +173,12 @@ li:hover {
 }
 
 .title {
-    margin-top: 5px;
-    margin-bottom: 2px;
     color: red;
     font-size: 30px;
     border-right: 1px solid red;
-    width: 39ch;
+    width: 19ch;
     white-space: nowrap;
     overflow: hidden;
-    letter-spacing: 15px;
     text-align: start;
     animation: typing 5s steps(19) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
 }
@@ -189,11 +202,13 @@ li:hover {
 }
 
 .object {
-    color: white;
+    color: black;
     font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 1px;
     line-height: 30px;
+    /* font-weight: 600; */
+    text-shadow: 0px 0px 1px black;
     animation: opac3 2s ease-in-out;
 }
 
@@ -204,23 +219,25 @@ li:hover {
 }
 
 .rightcontainer {
-    margin-left: 30px;
-    width: 45vw;
-    height: 52vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     /* border: 1px solid red; */
+    order: 2;
+
 }
 
 .img {
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    /* left: 50%; */
+    /* transform: translate(-50%, 0); */
+    width: 70%;
     align-self: center;
-    width: fit-content;
-    height: 90vh;
-    object-fit: cover;
-    filter: opacity(0.7) contrast(1.4) saturate(0.7) drop-shadow(0px 0px 50px rgb(92, 3, 3));
-    /* border: 1px solid red; */
+    filter: brightness(1) contrast(1.4);
+    /* filter: opacity(0.8) contrast(1.4) saturate(0.7) drop-shadow(0px 0px 50px rgb(92, 3, 3)); */
+    border: none;
+    border-radius: 50% 50% 10% 10%;
+    box-shadow: 0px 0px 20px black, 0px 0px 20px red;
     transform-style: preserve-3d;
     animation: imgentry 2s linear;
 }
@@ -234,6 +251,7 @@ li:hover {
 }
 
 .down {
+    padding-top: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -242,11 +260,13 @@ li:hover {
 .downloadbtn {
     padding: 5px 20px 10px 20px;
     font-size: 25px;
+    margin-bottom: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: transparent;
     /* border: 1px solid red; */
     border-radius: 20px;
     color: whitesmoke;
+    background-color: rgb(1, 5, 12);
     box-shadow: 0px 0px 10px white;
     text-shadow: 0px 0px 2px whitesmoke;
     z-index: 1;
@@ -278,593 +298,39 @@ li:hover {
 
 }
 
-@media (min-width: 1100px) and (max-width: 1115px) {
-    .leftcontainer {
-        margin-top: -150px;
-        transform: scale(0.9);
-    }
-}
 
-@media (min-width: 931px) and (max-width: 999px) {
+@media (min-width : 970px) and (max-width : 1034px) {
 
-    #notshow {
-        display: none;
-    }
-
-    #show {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        right: 0;
-        margin-top: 54px;
-        background-color: black;
-        z-index: 7;
-    }
-
-    .leftcontainer {
-        z-index: 2;
-    }
-
-    li {
-        text-align: center;
-        margin-top: 20px;
-        margin-right: 100px;
-        margin-left: 30px;
-    }
-
-    li {
-        transform: scale(1.4);
-    }
-
-    .menu {
-        display: block;
-        position: absolute;
-        top: 15px;
-        right: 30px;
-    }
-
-    .line {
-        width: 50px;
-        height: 6px;
-    }
-}
-
-@media (min-width: 761px) and (max-width: 930px) {
-    .menu {
-        width: fit-content;
-        height: fit-content;
-        align-self: center;
-        margin-bottom: 30px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        display: block;
-        /* z-index: -1; */
-        position: fixed;
-        right: 10px;
-        top: 10px;
-    }
-
-    .line {
-        width: 40px;
-        height: 3px;
-        margin-top: 0;
+    .container {
+        grid-template-columns: 1fr;
     }
 
     .rightcontainer {
-        position: fixed;
-        right: 0;
-        z-index: 1;
+        order: 1;
     }
 
     .leftcontainer {
-        position: fixed;
-        top: 100px;
-        left: 25px;
-        z-index: 2;
+        order: 2;
     }
-
-    .name {
-        font-size: 36px;
-        text-wrap: wrap;
-    }
-
-    .title {
-        margin-top: 30px;
-        font-size: 20px;
-        letter-spacing: 0;
-        width: 20ch;
-        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
-    }
-
-    @keyframes opac2 {
-        from {
-            opacity: 0;
-        }
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-    }
-
-    @keyframes cursor {
-        50% {
-            border-color: transparent;
-        }
-    }
-
-    .object {
-        padding-bottom: 5px;
-        margin-top: 40px;
-        font-size: 22px;
-        line-height: 35px;
-        width: 400px;
-        font-weight: 500;
-        /* background-color: black; */
-        border-radius: 20px;
-    }
-
-    .downloadbtn {
-        position: fixed;
-        bottom: 90px;
-        background-color: black;
-        border-radius: 50px;
-        border: none;
-        box-shadow: 0px 0px 10px white;
-    }
-
-    #notshow {
-        display: none;
-    }
-
-    #show {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        right: 0;
-        top: 50px;
-        background-color: black;
-        z-index: 7;
-    }
-
-    li {
-        margin-top: 20PX;
-    }
-
-    li {
-        transform: scale(1.4);
-    }
-
-
 }
 
-@media (min-width: 576px) and (max-width: 760px) {
-    .menu {
-        width: fit-content;
-        height: fit-content;
-        align-self: center;
-        margin-bottom: 30px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        display: block;
-        /* z-index: -1; */
-        position: fixed;
-        right: 10px;
-        top: 10px;
-    }
+@media all and (max-width : 969px) {
 
-    .line {
-        width: 40px;
-        height: 3px;
-        margin-top: 0;
+    .container {
+        grid-template-columns: 1fr;
     }
 
     .rightcontainer {
-        display: none;
+        order: 1;
     }
 
     .leftcontainer {
-        position: fixed;
-        top: 100px;
-        left: 15px;
+        order: 2;
     }
-
-    .name {
-        font-size: 36px;
-        text-wrap: wrap;
-    }
-
-    .title {
-        margin-top: 30px;
-        font-size: 20px;
-        letter-spacing: 0;
-        width: 20ch;
-        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
-    }
-
-    @keyframes opac2 {
-        from {
-            opacity: 0;
-        }
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-    }
-
-    @keyframes cursor {
-        50% {
-            border-color: transparent;
-        }
-    }
-
-    .object {
-        padding-bottom: 5px;
-        margin-top: 40px;
-        font-size: 22px;
-        line-height: 25px;
-        width: 600px;
-        font-weight: 500;
-        /* background-color: black; */
-        border-radius: 20px;
-    }
-
-    .downloadbtn {
-        position: fixed;
-        bottom: 90px;
-        background-color: black;
-        border-radius: 50px;
-        border: none;
-        box-shadow: none;
-    }
-
-    #notshow {
-        display: none;
-    }
-
-    #show {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        right: 0;
-        top: 35px;
-        background-color: black;
-        z-index: 2;
-    }
-
-    li {
-        margin-top: 20PX;
-    }
-
-    li {
-        transform: scale(1.4);
-    }
-
-
-}
-
-@media (min-width: 491px) and (max-width: 575px) {
-    .menu {
-        width: fit-content;
-        height: fit-content;
-        align-self: center;
-        margin-bottom: 30px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        display: block;
-        /* z-index: -1; */
-        position: fixed;
-        right: 10px;
-        top: 10px;
-    }
-
-    .line {
-        width: 40px;
-        height: 3px;
-        margin-top: 0;
-    }
-
-    .rightcontainer {
-        display: none;
-    }
-
-    .leftcontainer {
-        position: fixed;
-        top: 100px;
-        left: 15px;
-    }
-
-    .name {
-        font-size: 36px;
-        text-wrap: wrap;
-    }
-
-    .title {
-        margin-top: 10px;
-        font-size: 20px;
-        letter-spacing: 0;
-        width: 20ch;
-        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
-    }
-
-    @keyframes opac2 {
-        from {
-            opacity: 0;
-        }
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-    }
-
-    @keyframes cursor {
-        50% {
-            border-color: transparent;
-        }
-    }
-
-    .object {
-        padding-bottom: 5px;
-        margin-top: 40px;
-        font-size: 22px;
-        line-height: 25px;
-        width: 430px;
-        font-weight: 500;
-        /* background-color: black; */
-        border-radius: 20px;
-    }
-
-    .downloadbtn {
-        position: fixed;
-        bottom: 90px;
-        background-color: black;
-        border-radius: 50px;
-        border: none;
-        box-shadow: none;
-    }
-
-    #notshow {
-        display: none;
-    }
-
-    #show {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        right: 0;
-        top: 22px;
-        background-color: black;
-        z-index: 2;
-    }
-
-    li {
-        margin-top: 20PX;
-    }
-
-    li {
-        transform: scale(1.4);
-    }
-
-
-}
-
-/* @media all and (max-width: 999px) {
-    #show {
-        margin-top: 5px;
-    }
-} */
-
-
-@media (min-width: 441px) and (max-width: 490px) {
-    .menu {
-        width: fit-content;
-        height: fit-content;
-        align-self: center;
-        margin-bottom: 30px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        display: block;
-        /* z-index: -1; */
-        position: fixed;
-        right: 10px;
-        top: 10px;
-    }
-
-    .line {
-        width: 40px;
-        height: 3px;
-        margin-top: 0;
-    }
-
-    .rightcontainer {
-        display: none;
-    }
-
-    .leftcontainer {
-        position: fixed;
-        top: 100px;
-        left: 15px;
-    }
-
-    .name {
-        font-size: 38px;
-        text-wrap: wrap;
-    }
-
-    .title {
-        margin-top: 10px;
-        font-size: 20px;
-        letter-spacing: 0;
-        width: 20ch;
-        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
-    }
-
-    @keyframes opac2 {
-        from {
-            opacity: 0;
-        }
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-    }
-
-    @keyframes cursor {
-        50% {
-            border-color: transparent;
-        }
-    }
-
-    .object {
-        padding-bottom: 5px;
-        margin-top: 40px;
-        font-size: 22px;
-        line-height: 25px;
-        width: 400px;
-        font-weight: 500;
-        background-color: black;
-        border-radius: 20px;
-    }
-
-    .downloadbtn {
-        position: fixed;
-        bottom: 90px;
-        background-color: black;
-        border-radius: 50px;
-        border: none;
-        box-shadow: none;
-    }
-
-    #notshow {
-        display: none;
-    }
-
-    #show {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        right: 0;
-        top: -10px;
-        background-color: black;
-        z-index: 2;
-    }
-
-    li {
-        margin-top: 20PX;
-    }
-
-}
-
-@media (min-width: 381px) and (max-width: 440px) {
-
-    /* #show {
-        margin-top: 6.5vh;
-    } */
 
     .menu {
-        width: fit-content;
-        height: fit-content;
-        align-self: center;
-        margin-bottom: 30px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
         display: block;
-        /* z-index: -1; */
-        position: fixed;
-        right: 10px;
-        top: 10px;
-    }
-
-    .line {
-        width: 40px;
-        height: 3px;
-        margin-top: 0;
-    }
-
-    .rightcontainer {
-        display: none;
-    }
-
-    .leftcontainer {
-        position: fixed;
-        top: 100px;
-        left: 15px;
-    }
-
-    .name {
-        font-size: 25px;
-        text-wrap: wrap;
-    }
-
-    .title {
-        margin-top: 10px;
-        font-size: 20px;
-        letter-spacing: 0;
-        width: 20ch;
-        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
-    }
-
-    @keyframes opac2 {
-        from {
-            opacity: 0;
-        }
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-    }
-
-    @keyframes cursor {
-        50% {
-            border-color: transparent;
-        }
-    }
-
-    .object {
-        margin-top: 40px;
-        font-size: 17px;
-        line-height: 20px;
-        width: 340px;
-        font-weight: 500;
-        background-color: black;
-        border-radius: 20px;
-    }
-
-    .downloadbtn {
-        position: fixed;
-        bottom: 70px;
-        background-color: black;
-        border-radius: 50px;
-        border: none;
-        box-shadow: none;
+        z-index: 5;
     }
 
     #notshow {
@@ -873,244 +339,59 @@ li:hover {
 
     #show {
         position: fixed;
+        right: 0;
+        top: 0;
+        margin: 0;
         width: 100%;
-        height: 100vh;
-        display: flex;
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        z-index: 4;
+    }
+
+    ul {
         flex-direction: column;
         align-items: center;
-        right: 0;
-        top: -10px;
-        background-color: black;
-        z-index: 2;
+        transform: scale(1.2);
     }
 
-    li {
-        margin-top: 20PX;
-    }
 }
 
-@media (min-width: 331px) and (max-width: 380px) {
-    nav {
-        height: 60px;
-    }
-
-    /* .body {
-        background: black;
-    } */
-
-    /* #show {
-        margin-top: 90px;
-    } */
-
-    .menu {
-        width: fit-content;
-        height: fit-content;
-        align-self: center;
-        margin-bottom: 30px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        display: block;
-        /* z-index: -1; */
-        position: fixed;
-        right: 10px;
-        top: 10px;
-    }
-
-    .line {
-        width: 40px;
-        height: 3px;
-        margin-top: 0;
-    }
-
-    .rightcontainer {
-        display: none;
-    }
-
-    .leftcontainer {
-        position: fixed;
-        top: 60px;
-        left: 15px;
-    }
-
-    .name {
-        font-size: 23px;
-        text-wrap: wrap;
-    }
-
-    .title {
-        margin-top: 10px;
-        font-size: 20px;
-        letter-spacing: 0;
-        width: 20ch;
-        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
-    }
-
-    @keyframes opac2 {
-        from {
-            opacity: 0;
-        }
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-    }
-
-    @keyframes cursor {
-        50% {
-            border-color: transparent;
-        }
-    }
-
-    .object {
-        margin-top: 50px;
-        font-size: 17px;
-        line-height: 20px;
-        width: 340px;
-        font-weight: 500;
-        background-color: black;
-        border-radius: 20px;
-    }
-
-    .downloadbtn {
-        position: fixed;
-        bottom: 70px;
-        background-color: black;
-        border-radius: 50px;
-        border: none;
-        box-shadow: none;
-    }
-
-
-    #notshow {
-        display: none;
-    }
-
-    #show {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        right: 0;
-        top: -12px;
-        background-color: black;
-        z-index: 2;
-    }
-
-    li {
-        margin-top: 20PX;
-    }
-}
-
-@media all and (max-width: 330px) {
-    .body {
-        background: black;
-    }
-
+@media all and (max-width : 575px) {
     #h1s {
-        font-size: 30px;
-    }
-
-    .menu {
-        width: fit-content;
-        height: fit-content;
-        align-self: center;
-        margin-bottom: 30px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        display: block;
-        /* z-index: -1; */
-        position: fixed;
-        right: 10px;
-        top: 10px;
+        top: 20px;
+        font-size: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
     }
 
     .line {
-        width: 40px;
-        height: 3px;
-        margin-top: 0;
+        top: 25px;
+        height: 4px;
     }
 
-    .rightcontainer {
-        display: none;
-    }
-
-    .leftcontainer {
-        position: fixed;
-        top: 28px;
-        left: 10px;
+    .container {
+        padding-left: 20px;
     }
 
     .name {
-        font-size: 25px;
+        text-align: center;
+        font-size: 35px;
+        text-wrap: wrap;
     }
 
     .title {
-        font-size: 20px;
-        letter-spacing: 0;
-        width: 20ch;
-        animation: typing 5s steps(20) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
-    }
-
-    @keyframes opac2 {
-        from {
-            opacity: 0;
-        }
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-    }
-
-    @keyframes cursor {
-        50% {
-            border-color: transparent;
-        }
+        padding-left: 15vw;
+        font-size: 25px;
     }
 
     .object {
-        font-size: 12px;
-        line-height: 20px;
-        width: 300px;
-        font-weight: 700;
-        background-color: black;
-        border-radius: 20px;
-    }
-
-    .downloadbtn {
-        position: fixed;
-        bottom: 25px;
-        border: none;
-        box-shadow: none;
-    }
-
-    li {
         text-align: center;
-        font-size: 20px;
-        margin-top: 0px;
     }
 
-    #notshow {
-        display: none;
-    }
-
-    #show {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        right: 0;
-        margin-top: 54px;
-        background-color: black;
-        z-index: 2;
+    ul {
+        transform: scale(1);
+        gap: 40px;
     }
 }
