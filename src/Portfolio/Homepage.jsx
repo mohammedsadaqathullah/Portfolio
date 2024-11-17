@@ -2,6 +2,7 @@ import './Homepage.css'
 import img2 from './left.png'
 import Navv from './Navv';
 
+
 function Homepage() {
     return (
         <div className='body' id='homepage'>
