@@ -11,7 +11,15 @@ function Homepage() {
                 <div className="leftcontainer">
                     <h2 className='name'>Mohammed Sadaqathullah</h2>
                     <p className='title'>Front-End Developer</p>
-                    <p className='object'>Front-End Developer with the  knowledge of <span className="highlights">React.js,</span> building dynamic, responsive, and user-friendly web applications using efficient <span className="highlights">state management and reusable components.</span> Graduated with a <span className="highlights">Bachelor of Science in Psychology,</span> providing a solid understanding of user behavior and cognitive processes. Eager to <span className='highlights'>leverage psychological insights to enhance user experience and drive effective design</span> in the IT field.</p>
+                    <p className='object'>A results-driven <span className="highlight">Front-End Developer</span> with expertise in <span className="highlight">React.js</span> and modern JavaScript frameworks, specializing
+                        in the development of dynamic, responsive, and high-performance web applications. Proficient in <span className="highlight">state
+                            management, React hooks, and API integration,</span> I focus on delivering seamless, scalable solutions that provide
+                        exceptional user experiences. Holding a <span className="highlight">BSc in Psychology,</span> I leverage insights into human behavior and cognitive
+                        processes to design intuitive, user-centric interfaces. As the <span className="highlight">Founder of Zii Techs,</span> a registered Micro Enterprise
+                        under <span className="highlight">UDYAM (Udyam-TN-34-0076422),</span> I am actively engaged in providing computer programming,
+                        consultancy, and software services. Passionate about continuous learning and professional growth, I am dedicated
+                        to applying my skills to create innovative solutions that meet both business and user needs.
+                    </p>
                 </div>
                 <div className="rightcontainer">
                     <img src={img2} className='img' alt="" />
