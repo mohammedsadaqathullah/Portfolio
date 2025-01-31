@@ -26,11 +26,12 @@ function Skills() {
                             {/* </div> */}
                         </tr>
                         <tr>
+                            <td>    <p className='skilltitles'>
+                                HTML</p></td>
                             <td><p className='skilltitles'>
                                 CSS
                             </p></td>
-                            <td>    <p className='skilltitles'>
-                                HTML</p></td>
+
                             <td><p className="skilltitles">
                                 JavaScript
                             </p></td>
@@ -56,8 +57,9 @@ function Skills() {
                                 Material UI
                             </p></td>
                             <td><p className="skilltitles">
-                                React
+                                React / React Native
                             </p></td>
+
                         </tr>
 
                     </table>
