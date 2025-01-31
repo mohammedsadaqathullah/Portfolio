@@ -57,7 +57,7 @@ function Skills() {
                                 Material UI
                             </p></td>
                             <td><p className="skilltitles">
-                                React / React Native
+                                React, React Native
                             </p></td>
 
                         </tr>
