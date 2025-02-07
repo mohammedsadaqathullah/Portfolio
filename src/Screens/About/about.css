@@ -137,6 +137,8 @@
 }
 
 .downloadButton {
+    width: 50%;
+    text-align: center;
     cursor: pointer;
     color: rgb(187, 180, 180);
     font-size: 20px;
@@ -176,10 +178,10 @@
 }
 
 .contactList {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 70px;
     width: 100%;
-    background-color: rgb(7, 8, 8);
+
     display: flex;
     justify-content: center;
     gap: 10%;
@@ -222,6 +224,24 @@
         line-height: 30px;
     }
 
+    .downloadContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        /* background-color: rgb(204, 198, 198); */
+
+    }
+
+    .downloadButton {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 22px;
+        background: transparent;
+    }
+
     .aboutContainer .object {
         margin-top: 20px;
         font-size: 20px;
@@ -242,5 +262,20 @@
         background-color: transparent;
         color: rgb(89, 139, 247);
         font-weight: 500;
+    }
+
+    .contactContainer {
+        margin-top: 30px;
+    }
+
+    .contactList {
+        padding-top: 5px;
+
+    }
+}
+
+@media all and (max-width : 280px) {
+    .aboutImageContainer {
+        margin-top: 60px;
     }
 }

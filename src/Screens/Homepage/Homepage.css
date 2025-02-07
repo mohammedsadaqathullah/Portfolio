@@ -76,11 +76,11 @@
     font-size: 35px;
     font-weight: 700;
     border-right: 5px solid rgb(255, 255, 255);
-    width: 35ch;
+    width: 36ch;
     white-space: nowrap;
     overflow: hidden;
     text-align: start;
-    animation: typing 8s steps(32) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
+    animation: typing 8s steps(33) infinite alternate, cursor 0.5s infinite alternate, opac2 2s ease-in-out;
 }
 
 @keyframes opac2 {
