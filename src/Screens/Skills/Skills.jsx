@@ -12,18 +12,18 @@ export const Skills = () => {
             <div className="menuContainer">
                 <div className='menu'>
                     <div className="first">
-                        <NavLink to="/">
+                        <NavLink to="/" style={{ textDecoration: 'none', color: "white" }}>
                             <p className='FM'><FaHome size={26} /> Home</p>
                         </NavLink>
-                        <NavLink to="/About">
-                            <p className='FM'><FaLaptopCode size={26} /> About</p>
+                        <NavLink to="/About" style={{ textDecoration: 'none', color: "white" }}>
+                            <p className='FM'><VscSmiley size={26} /> About</p>
                         </NavLink>
 
-                        <NavLink to="/Skills">
-                            <p className='FM'><VscSmiley size={26} /> Skills</p>
+                        <NavLink to="/Skills" style={{ textDecoration: 'none', color: "white" }}>
+                            <p className='FM'><FaLaptopCode size={26} /> Skills</p>
                         </NavLink>
 
-                        <NavLink to="/Projects">
+                        <NavLink to="/Projects" style={{ textDecoration: 'none', color: "white" }}>
                             <p className='FM'><GiFiles size={26} /> Projects</p>
                         </NavLink>
                     </div>
