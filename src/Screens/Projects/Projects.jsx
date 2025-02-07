@@ -44,7 +44,8 @@ export const Projects = () => {
             title: "ToDo List",
             description: "The To-Do List site is a user-friendly task management application built with React.js. It allows users to easily add tasks, mark them as completed, edit existing tasks, and delete them when no longer needed. The application integrates with localStorage to ensure that tasks are preserved even after the user refreshes or revisits the page. This simple yet effective tool offers a seamless, interactive experience for managing daily tasks, combining ease of use with the convenience of local data storage.",
             url: "https://daily-task-list-site.vercel.app/"
-        }
+        },
+
     ];
 
     const realTimeProjects = [

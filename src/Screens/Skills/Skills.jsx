@@ -2,8 +2,6 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { FaHome, FaLaptopCode } from 'react-icons/fa';
 import { GiFiles } from 'react-icons/gi';
-import { MdAddIcCall } from 'react-icons/md';
-import { ImAttachment } from 'react-icons/im';
 import { VscSmiley } from 'react-icons/vsc';
 
 import "./skills.css"

@@ -1,0 +1,246 @@
+.aboutContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuContainer {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+
+.menu .first {
+
+    padding: 5px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    z-index: 0;
+    flex-wrap: wrap;
+}
+
+
+.menu .first .FM {
+    width: 60px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border-top: 0.5px solid rgb(139, 139, 139);
+    border-bottom: 0.5px solid rgb(36, 68, 158);
+    animation: menuAnime 2s linear;
+}
+
+@keyframes menuAnime {
+    from {
+        transform: translateY(-300px);
+    }
+}
+
+.FM:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 0px 1px 2px rgb(48, 47, 47);
+    border: 0.5px solid rgb(82, 78, 78);
+}
+
+.aboutContentContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.aboutImageContainer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padding: 50px; */
+    animation: imgEntry 3s linear;
+}
+
+@keyframes imgEntry {
+    from {
+        opacity: 0;
+    }
+}
+
+.aboutImage {
+    border: 2px solid rgb(51, 51, 51);
+    border-radius: 100px;
+    width: 260px;
+    height: 320px;
+}
+
+.object {
+    width: 80%;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    line-height: 45px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    animation: opac3 2s ease-in-out;
+
+}
+
+@keyframes opac3 {
+    from {
+        opacity: 0;
+    }
+}
+
+.object span {
+    border-radius: 20px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+
+.object span {
+    background-color: transparent;
+    color: rgb(89, 139, 247);
+    font-weight: 500;
+}
+
+.downloadContainer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.downloadButton {
+    cursor: pointer;
+    color: rgb(187, 180, 180);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgb(255, 255, 255);
+}
+
+.downloadButton:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.3);
+    border: none;
+    box-shadow: none;
+}
+
+.contactContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(13, 14, 14);
+}
+
+.contactHeading {
+    color: white;
+
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    border-bottom: 1px solid rgb(99, 97, 97);
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contactList {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    width: 100%;
+    background-color: rgb(7, 8, 8);
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.contactListItems {
+    border: 1px solid rgb(29, 28, 28);
+    padding: 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    margin-top: 30px;
+    box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.712);
+}
+
+.contactListItems:hover {
+    transition: all 0.2s ease-in;
+    border: none;
+    transform: scale(1.2);
+}
+
+@media all and (max-width : 900px) {
+    .aboutImage {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+@media all and (max-width : 575px) {
+    .aboutImageContainer {
+        margin-top: 30px;
+    }
+
+    .object {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .aboutContainer .object {
+        margin-top: 20px;
+        font-size: 20px;
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        padding-bottom: 30px;
+        background-color: rgb(15, 15, 15);
+    }
+
+    .FM {
+        border-bottom: 3px solid rgb(218, 218, 224);
+        border-top: none;
+        margin: 5px;
+    }
+
+    .object span {
+        background-color: transparent;
+        color: rgb(89, 139, 247);
+        font-weight: 500;
+    }
+}
