@@ -22,25 +22,25 @@ export const Projects = () => {
 
     const personalProjects = [
         {
-            image: jobportalImg,
+            image:" https://i.postimg.cc/BZpGcGNp/jobd.png",
             title: "Admin Job Portal",
             description: "The Admin Job Portal Interface is an advanced platform designed to enable seamless job management for administrators. It allows admins to easily post, edit, and delete job listings with full control over content. The front-end is built using React.js, featuring 90% custom CSS and 10% Material UI for an intuitive and responsive user experience. The backend is uniquely developed using AI, powered by Express and MongoDB Atlas, ensuring scalability, security, and intelligent data handling. The AI-driven backend optimizes job posting processes and enhances functionality, creating a highly efficient and adaptive admin portal.",
             url: "https://job-portal-fullstack.vercel.app/"
         },
         {
-            image: ziiImg,
+            image: "https://i.postimg.cc/q763ywTc/zid.png",
             title: "Zii Pizza : E-commerce UI",
             description: "The Zii Pizza E-commerce Site UI showcases a sleek, modern design built with React.js and React Bootstrap. This project focuses exclusively on the visual and interactive layout, featuring a responsive and intuitive interface that ensures a smooth browsing experience. While no functionality has been implemented yet, the UI is designed with key elements like product displays, navigation, and interactive components, providing a solid foundation for future development and functionality integration.",
             url: "https://zii-pizza.vercel.app/"
         },
         {
-            image: crudImg,
+            image: "https://i.postimg.cc/GtWN3qdM/crudd.png",
             title: "CRUD operation",
             description: "The CRUD Site is a dynamic web application built with React.js, designed to perform Create, Read, Update, and Delete (CRUD) operations. The front-end offers an intuitive user interface that allows users to add, edit, update, and delete data effortlessly. The backend is powered by JSON fake APIs, enabling seamless data handling and interaction. This project provides a practical solution for managing data through a simple and responsive interface, showcasing the ability to implement basic CRUD functionalities in a web environment.",
             url: "https://crud-json-op.netlify.app/"
         },
         {
-            image: todoImg,
+            image: "https://i.postimg.cc/c4c2G7Pc/todod.png",
             title: "ToDo List",
             description: "The To-Do List site is a user-friendly task management application built with React.js. It allows users to easily add tasks, mark them as completed, edit existing tasks, and delete them when no longer needed. The application integrates with localStorage to ensure that tasks are preserved even after the user refreshes or revisits the page. This simple yet effective tool offers a seamless, interactive experience for managing daily tasks, combining ease of use with the convenience of local data storage.",
             url: "https://daily-task-list-site.vercel.app/"
