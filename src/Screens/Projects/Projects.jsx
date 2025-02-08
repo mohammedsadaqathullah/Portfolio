@@ -1,10 +1,4 @@
 import React, { useState } from 'react';
-import jobportalImg from '../../Media/jobd.png';
-import ziiImg from '../../Media/zid.png';
-import crudImg from '../../Media/crudd.png';
-import todoImg from '../../Media/todod.png';
-import hayasImg from '../../Media/hayasd.png';
-import hayasAppImg from '../../Media/hayasApp.jpg';
 import { NavLink } from 'react-router-dom';
 import { MdNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
