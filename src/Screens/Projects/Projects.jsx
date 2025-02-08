@@ -50,13 +50,13 @@ export const Projects = () => {
 
     const realTimeProjects = [
         {
-            image: hayasImg,
+            image: "https://i.postimg.cc/vZL5HxDv/hayasd.png",
             title: "HAYAS - Ecommerce Website",
             description: "HAYAS is a user-friendly grocery and food ordering platform catering to the villages and towns surrounding Tirunelveli district. The site allows users to easily register and log in through Firebase Authentication, ensuring secure access to their personal accounts. Once logged in, users can browse a wide variety of grocery and food products, select their desired items, and confirm their order. Upon confirmation, an automatically generated order list will appear, and users are redirected to WhatsApp to complete the transaction and communicate directly with the service. The website also features promotional advertisements and video content, keeping users informed about the latest deals and updates. With a clean and intuitive product display, users can quickly add items to their cart and finalize their order with ease, making grocery and food shopping convenient and efficient.",
             url: "https://hayas-fast-delivery.netlify.app/"
         },
         {
-            image: hayasAppImg,
+            image: "https://i.postimg.cc/8cZCsvxq/hayasApp.jpg",
             title: "HAYAS - Ecommerce APP",
             description: "Hayas is a mobile application developed with React Native, offering the same functionality as the website version but optimized for mobile devices. Users can securely register and log in using Firebase Authentication. Once logged in, they can browse grocery and food products, add items to their cart, and confirm orders. Upon confirmation, the app generates an order list and redirects users to WhatsApp for finalizing the order. Additionally, the app features advertising posts and videos, keeping users updated on promotions. Tailored for Tirunelveli district and surrounding towns, Hayas makes grocery and food shopping easy and efficient on mobile.",
             url: "https://expo.dev/artifacts/eas/mFJKV6vMWrwqLM9TQr8KU7.apk"
